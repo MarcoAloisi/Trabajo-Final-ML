@@ -13,7 +13,7 @@ Para conseguir los datos, se implementó un proceso de web scraping con Selenium
 Se llevó a cabo un proceso de ingeniería de características para mejorar el rendimiento del modelo:
 
 - **Creación de Nuevas Variables**: Se generaron variables adicionales con un significado específico para captar mejor el rendimiento de los jugadores.
-- **Selección de Variables**: Se eliminaron todas las variables con una correlación superior a 0.8 con la variable objetivo y aquellas que presentaban muy poca correlación, con el fin de optimizar el rendimiento del modelo y reducir la multicolinealidad.
+- **Selección de Variables**: Se eliminaron todas las variables con una correlación superior a 0.8 con la variable objetivo y aquellas que presentaban muy poca correlación. Por ejemplo, la variable de porcentaje de sets ganados mostraba una correlación de 0.98 con la variable objetivo, lo que ocasionaba que el modelo se basara únicamente en esta variable para realizar sus predicciones. Al eliminar estas variables altamente correlacionadas, se mejoró la diversidad de las características utilizadas, reduciendo la multicolinealidad y optimizando el rendimiento del modelo.
 
 ## Requisitos Previos Para el Docker
 
