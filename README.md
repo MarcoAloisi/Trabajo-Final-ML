@@ -24,11 +24,11 @@ Tambien es necesario descargar la carpeta app del github y guardarla en una loca
 
 ## Ejecución
 
-1- Abrir la app de Docker Deskptop
-2- Abrir la terminal y navegar hasta la carpetta app que mencione anteriormente (la cual debes de descargar de este github)
-3- Una vez dentro de la carpeta app, ejecutar el siguiente comando:
+1. Abrir la app de Docker Deskptop
+2. Abrir la terminal y navegar hasta la carpetta app que mencione anteriormente (la cual debes de descargar de este github)
+3. Una vez dentro de la carpeta app, ejecutar el siguiente comando:
 docker build -t gradio-app .
 docker run -p 7860:7860 gradio-app
-4- Una vez ejecutado, acceder al link que saldra en la pantalla de Docker que seria este: http://localhost:7860/
-5- Dentro de la app cargar el archivo df_combined_predict.csv que lo puedes descargar de la carpeta "data" de este mismo github
-6- Por ultimo pulsar predict y esperar los resultados
+4. Una vez ejecutado, acceder al link que saldra en la pantalla de Docker que seria este: http://localhost:7860/
+5. Dentro de la app cargar el archivo df_combined_predict.csv que lo puedes descargar de la carpeta "data" de este mismo github
+6. Por ultimo pulsar predict y esperar los resultados
