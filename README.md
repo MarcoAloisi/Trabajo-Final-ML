@@ -4,11 +4,11 @@ Este proyecto utiliza técnicas de Machine Learning para predecir el porcentaje 
 
 Para entrenar el modelo, se usaron datos de los jugadores ubicados en los rankings del 51 al 100, así como jugadores del circuito Challenger.
 
-## Obtención y Preparación de los Datos
+## Obtención y Preprocessing de los Datos
 
 Para conseguir los datos, se implementó un proceso de web scraping con Selenium en la página [Tennis Abstract](https://www.tennisabstract.com/cgi-bin/leaders.cgi). Tras la obtención de los datos, se realizó una limpieza de la tabla, eliminando porcentajes (`%`) y transformando variables de tipo `object` a tipos numéricos (`int` y `float`) o categóricos según fuera necesario.
 
-### Ingeniería de Características
+### Feature Engineering
 
 Se llevó a cabo un proceso de ingeniería de características para mejorar el rendimiento del modelo:
 
